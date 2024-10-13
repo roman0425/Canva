@@ -7,12 +7,14 @@ interface ButtonProps {
     classes?: string
     label: string
     labelColor?: string
+    onClick?: ()=>void
 }
 
-const CommonButton = ({ icon, classes, label, labelColor="text-white" }: ButtonProps) => {
+const CommonButton = ({ icon, classes, label, labelColor="text-white", onClick }: ButtonProps) => {
     return (
         <Button
-            className={cn('rounded-lg h-10 py-2 px-8 text-sm flex items-center',classes)}
+            className={cn('rounded-lg h-10 py-2 px-8 text-sm flex items-center justify-center',classes)}
+            onClick={onClick}            
         >
             {
                 icon &&

@@ -31,7 +31,7 @@ export default function Drawer({
           >
             <div
               className={`flex flex-col justify-between bg-white z-50
-                          w-full max-w-sm p-4 overflow-hidden text-left
+                          w-full max-w-sm overflow-hidden text-left
                           align-middle shadow-xl`}>
                   {children}
             </div>
