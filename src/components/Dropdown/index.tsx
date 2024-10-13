@@ -19,8 +19,8 @@ const DropDown =({menubutton, menuitems}: DropDownProps)=> {
             className="origin-top-right rounded-xl bg-white drop-shadow-lg p-1 transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
         >
             {
-                menuitems.map((menuitem:React.ReactNode) => 
-                    <MenuItem>
+                menuitems.map((menuitem:React.ReactNode, index) => 
+                    <MenuItem key={index}>
                         {menuitem}
                     </MenuItem>
                 )

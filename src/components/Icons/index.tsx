@@ -2,7 +2,7 @@ import Image from "next/image"
 import { FC } from "react"
 
 interface IconProps {
-    name: any
+    name: string
     width?: number
     height?: number
     color?: string
