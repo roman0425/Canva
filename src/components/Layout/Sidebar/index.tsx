@@ -14,8 +14,8 @@ const Sidebar =()=> {
     const { isMobile, isTablet } = useIsMobile();
 
     const handleClickItems =(btn: number)=> {
-        setSelectButton(btn)
-        isTablet && setShowSidebar(!showSidebar);
+        setSelectButton(btn);
+        if(isTablet) setShowSidebar(!showSidebar);
     }
 
     useEffect(()=> {
